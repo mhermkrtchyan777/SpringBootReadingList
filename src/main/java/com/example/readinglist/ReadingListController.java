@@ -24,6 +24,7 @@ public class ReadingListController {
         List<Book> readingList = readingListRepository.findByReader(reader);
         if (readingList != null) {
             model.addAttribute("books", readingList);
+            model.addAttribute("reader",reader);
         }
         return "readingList";
     }

@@ -1,0 +1,16 @@
+<html lang="en">
+<head>
+    <title>Oops!</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+
+<html lang="en">
+<div class="errorPage">
+    <span class="oops">Oops!</span><br/>
+    <p>There seems to be a problem with the page you requested
+        (<span text="${path}">/readingList</span>).</p>
+    <p th:text="${'Details: ' + message}"></p>
+</div>
+</html>
+
+</html>
